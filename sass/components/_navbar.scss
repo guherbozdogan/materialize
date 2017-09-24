@@ -59,14 +59,20 @@ nav {
   // Logo
   .brand-logo {
     position: absolute;
-    color: $navbar-font-color;
+    color: $navbar-brand-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;
     padding: 0;
+    padding-left:5px;
+    top:10px;
+
 
     &.center {
       left: 50%;
       transform: translateX(-50%);
+    }
+    @media #{$small-and-down} {
+      top:15px;
     }
 
     @media #{$medium-and-down} {
